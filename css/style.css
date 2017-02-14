@@ -1,0 +1,47 @@
+/* background color for demo - see BS columns*/
+/*div[class*="col-"] {*/
+/*background-color: #ccc;*/
+/*border: 1px solid black;*/
+/*}*/
+
+.fancy-box {
+	background-color: pink;
+	padding: 2rem;
+	border: 3px solid magenta;
+	margin: 2rem 0;
+	border-radius: 2rem;
+}
+
+.fillmurray {
+	background: url("http://www.fillmurray.com/g/400/400") no-repeat center;
+	min-height: 200px;
+	background-size: cover;
+	margin-bottom: 2rem;
+}
+
+footer {
+	background-color: black;
+	color: magenta;
+	padding: 1.75rem 0;
+	font-size: 0.9rem;
+	margin-top: 2rem;
+}
+
+/***
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+***/
+
+/*corrects IE min-height bug*/
+html { display: flex;}
+body { width: 100%;}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
